@@ -1,32 +1,120 @@
 <!DOCTYPE html>
-
 <html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("/w3images/wedding_couple.jpg")}
+.bgimg2 {background-image: url("/w3images/flowers.jpg")}
+</style>
+<body>
 
- <head>
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Jane & John</h1>
+    <h2>Are getting married</h2>
+    <h2><b>17.07.2017</b></h2>
+  </div>
+</header>
 
-  <center><h1><u>Stachura <br>Service</u></h1>.</center>
- 
- </head>
- <body>
-   <p style="text-align:center;"><a href="service.html"><img src="baner.gif" alt="1" width="600"></p></a>
-   
-   <font size="5">
-   <TABLE WIDTH=900 align="left"> 
-    <TR> 
-     <TD style="text-align:right" size="20"> Naprawy</br>Montaż</br>Pomoc techniczna</br> </TD> 
-     <TD style="text-align:right" size="20"> NIEDROGO</br>NIEZAWODNIE</br>NIEZAPOMNIANIE</br> </TD> 
-    </TR>
-   </TABLE>
-   </font>
-	
-   <font size="5">
-    <TABLE WIDTH=900 align="left"> 
-     <TR> 
-	  <TD style="text-align:center" size="20"> <a href="ftp://192.168.33.41/">Tomasz Stachura</a> </TD>  
-      <TD style="text-align:right" size="20"> <a href="www.canva.com"><img src="data:image/png;base64,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" alt="1" width="100"></a> </TD> 
-     </TR>
-    </TABLE>
-   </font>
-   
- </body>
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Jane & John</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>Jane & John</b></h1>
+    <img class="w3-round w3-grayscale-min" src="/w3images/wedding_couple2.jpg" style="width:100%;margin:32px 0">
+    <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.</i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">You Are Invited</h1><br>
+    <h2>Of course..</h2>
+  </div>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
+    <img class="w3-round-large w3-grayscale-min" src="/w3images/wedding_location.jpg" style="width:100%;margin:64px 0">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>When</h2>
+        <p>Wedding Ceremony - 2:00pm</p>
+        <p>Reception & Dinner - 5:00pm</p>
+      </div>
+      <div class="w3-half">
+        <h2>Where</h2>
+        <p>Some place, an address</p>
+        <p>Some where, some address</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+  <h1>HOPE YOU CAN MAKE IT!</h1>
+  <p class="w3-large">Kindly Respond By January, 2017</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <p>We really hope you can make it.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      </form>
+      <p><i>Sincerely, John & Jane</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
 </html>
